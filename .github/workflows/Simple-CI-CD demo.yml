@@ -4,10 +4,15 @@ on:
   push:
     branches:
       - main
-
 jobs:
   job1:
     runs-on: ubuntu-latest
     steps:
+      - name: Say Hello
+        run: echo "hello world"
+  job2:
+    needs: job1
+    runs-on: ubuntu-latest
+    steps:
       - name: Welcome
-        run: echo "welcome to simple CI-CD demo"
+        run: echo "welcome to nu"        
