@@ -1,4 +1,4 @@
-name: Simple-CI-CD demo
+name: Simple-CI-CD
 
 on:
     push:
@@ -10,4 +10,4 @@ jobs:
           runs-on: ubuntu-latest
           steps:
                - name: Welcome
-                run: echo "welcome to simple CI-CD demo"
+                 run: echo "welcome to simple CI-CD demo"
